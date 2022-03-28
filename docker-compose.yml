@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+  kali:
+    build: .
+    cap_add:
+      - NET_ADMIN
+    stdin_open: true
+    tty: true
+    ports:
+      - "22"
+    networks:
+      - internal_labs
+    volumes:
+      - ~/script_folder_docker:/root/script_init
+
+networks:
+  internal_labs:
+    external: true
