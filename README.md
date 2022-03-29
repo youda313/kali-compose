@@ -17,8 +17,8 @@ Note: SSH port is map randomly to a port of the machine
 
 If you want to scale directly in the code add the following under the kali service in docker-compose.yml
 
-'''
+```
     deploy:
       mode: replicated
       replicas: 6
-'''
+```
