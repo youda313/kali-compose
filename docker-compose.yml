@@ -9,10 +9,10 @@ services:
     ports:
       - "22"
     networks:
-      - internal_labs
+      - guacamoledockercompose_internal_labs
     volumes:
       - ~/script_folder_docker:/root/script_init
 
 networks:
-  internal_labs:
+  guacamoledockercompose_internal_labs:
     external: true
